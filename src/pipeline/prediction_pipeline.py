@@ -50,7 +50,7 @@ class CustomData:
         self.color = color
         self.clarity = clarity
 
-    def get_data_as_dataframe(self):
+    def get_data_as_dataframe(self): # Converts the inputted values from user to dict and then back to dataframe for prediction
         try:
             custom_data_input_dict = {
                 'carat':[self.carat],
